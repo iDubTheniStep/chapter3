@@ -1,13 +1,26 @@
 package pg175;
-
-public class NumbersDemo
+import java.util.Scanner;
+public class NumbersDemo2 
 {
+
 	public static void main(String[] args)
 	{
+		int A;
+		int B;
 		
-		int A = 12;
-		int B = 10;
+		
+		
+		System.out.println("Please enter first number");
+		Scanner input = new Scanner(System.in);
+		A = input.nextInt();
+		
+		System.out.println("Please enter second Number");
+		Scanner input1 = new Scanner(System.in);
+		B = input1.nextInt();
+		
 		DisplayTwiceTheNumber(A , B);
+		displayNumberPlusFive(A , B);
+		DisplayNumberSquared(A , B);
 	}
 	public static void DisplayTwiceTheNumber(int TwiceTheNumber, int NumberTwice) 
 	{
